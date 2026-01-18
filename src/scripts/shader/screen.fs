@@ -13,7 +13,8 @@ in vec2 vUv;
 out vec4 O;
 
 const float DETAIL = 8.;
-const float PX_RANGE = 4.;
+
+const float PX_RANGE = 4.; // msdf生成時に指定したレンジ
 #include 'module/msdf.glsl'
 
 vec3 hash(vec3 v) {
