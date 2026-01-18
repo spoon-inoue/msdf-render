@@ -40,7 +40,7 @@ void main() {
 
     fuv = fract(quv);
     iuv = floor(quv);
-    if (hash(vec3(iuv, randomSeed)).x < (0.2 + (1. - (i / DETAIL)) * 0.1)) break;
+    if (0. < i && hash(vec3(iuv, randomSeed)).x < (0.2 + (1. - (i / DETAIL)) * 0.1)) break;
     quv *= 2.;
   }
 

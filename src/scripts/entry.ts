@@ -68,9 +68,9 @@ gsap.fromTo(
 		duration: 3,
 		ease: 'none',
 		repeat: -1,
-		repeatDelay: 2,
+		repeatDelay: 1,
 		onRepeat: () => {
 			mat.uniforms.randomSeed.value = Math.random()
 		},
-	}
+	},
 )
